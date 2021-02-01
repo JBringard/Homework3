@@ -2,9 +2,10 @@
   "name": "homework1",
   "version": "1.0.0",
   "description": "This is Homework1",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/JBringard/Homework1/issues"
   },
-  "homepage": "https://github.com/JBringard/Homework1#readme"
+  "homepage": "https://github.com/JBringard/Homework1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
