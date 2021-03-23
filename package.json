@@ -1,7 +1,7 @@
 {
-  "name": "homework1",
+  "name": "homework3",
   "version": "1.0.0",
-  "description": "This is Homework1",
+  "description": "This is Homework3",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JBringard/Homework1.git"
+    "url": "git+https://github.com/JBringard/Homework3.git"
   },
   "author": "Gerard Bringard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JBringard/Homework1/issues"
+    "url": "https://github.com/JBringard/Homework3/issues"
   },
-  "homepage": "https://github.com/JBringard/Homework1#readme",
+  "homepage": "https://github.com/JBringard/Homework3#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
