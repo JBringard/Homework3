@@ -1,9 +1,6 @@
 /*
 Gerard Bringard
-NodeJS Homework 1
-This program listens on port 8080,
-and when it receives a request, it
-prints out "Hello World" to the page.
+NodeJS Homework 3
  */
 const express = require('express');
 
