@@ -1,5 +1,7 @@
 const Winston = require('winston');
 
+const ONE_THOUSAND = 1000;
+
 const winstonLogger = Winston.createLogger({
   transports: [
     new Winston.transports.Console({
@@ -14,7 +16,7 @@ const log = (search) => {
   });
 };
 module.exports = (req, res, next) => {
-  winstonLogger.info(Math.floor(Date.now() / 1000));
+  winstonLogger.info(Math.floor(Date.now() / ONE_THOUSAND));
   winstonLogger.info(`Method: ${req.method}`);
   winstonLogger.info(`Original Url: ${req.originalUrl}`);
   winstonLogger.info('Body:');

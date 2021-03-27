@@ -1,6 +1,14 @@
 /*
 Gerard Bringard
 NodeJS Homework 3
+This program takes a request and sends it
+through middlewares. The body is parsed to
+json, then the verb used is checked to see
+if it was DELETE. Then we validate the request
+by checking a "date-validation" field. Then we
+log the request using winston, and then we have
+a 50/50 chance of getting "Hello World" or throwing
+an error which is caught by the custom error handler.
  */
 
 const Express = require('express');

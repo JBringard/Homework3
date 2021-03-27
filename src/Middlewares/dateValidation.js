@@ -1,5 +1,9 @@
 const Codes = require('http-status-codes');
 
+const THREE_HUNDRED = 300;
+const TEN = 10;
+const ONE_THOUSAND = 1000;
+
 const findDate = (search) => {
   let result = null;
   Object.keys(search).forEach((key) => {
@@ -11,14 +15,14 @@ const findDate = (search) => {
 };
 
 const validateDate = (date) => {
-  const epochTime = Number.parseInt(date, 10);
-  const currentEpochTime = Math.floor(Date.now() / 1000);
+  const epochTime = Number.parseInt(date, TEN);
+  const currEpochTime = Math.floor(Date.now() / ONE_THOUSAND);
 
-  if (date.length !== 10 || Number.isNaN(epochTime)) {
+  if (date.length !== TEN || Number.isNaN(epochTime)) {
     return false;
   }
 
-  if (epochTime >= currentEpochTime - 300 && epochTime <= currentEpochTime + 300) {
+  if (epochTime >= currEpochTime - THREE_HUNDRED && epochTime <= currEpochTime + THREE_HUNDRED) {
     return true;
   }
   return false;
