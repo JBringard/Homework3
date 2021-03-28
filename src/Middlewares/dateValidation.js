@@ -18,7 +18,7 @@ const validateDate = (date) => {
   const epochTime = Number.parseInt(date, TEN);
   const currEpochTime = Math.floor(Date.now() / ONE_THOUSAND);
 
-  if (date.length !== TEN || Number.isNaN(epochTime)) {
+  if (Number.isNaN(epochTime)) {
     return false;
   }
 
