@@ -16,7 +16,7 @@ const log = (search) => {
   });
 };
 module.exports = (req, res, next) => {
-  winstonLogger.info(Math.floor(Date.now() / ONE_THOUSAND));
+  winstonLogger.info(`Current Time: ${Math.floor(Date.now() / ONE_THOUSAND)}`);
   winstonLogger.info(`Method: ${req.method}`);
   winstonLogger.info(`Original Url: ${req.originalUrl}`);
   winstonLogger.info('Body:');

@@ -15,14 +15,15 @@ const findDate = (search) => {
 };
 
 const validateDate = (date) => {
-  const epochTime = Number.parseInt(date, TEN);
+  const epochTimeSent = Number.parseInt(date, TEN);
   const currEpochTime = Math.floor(Date.now() / ONE_THOUSAND);
 
-  if (Number.isNaN(epochTime)) {
+  if (Number.isNaN(epochTimeSent)) {
     return false;
   }
 
-  if (epochTime >= currEpochTime - THREE_HUNDRED && epochTime <= currEpochTime + THREE_HUNDRED) {
+  if (epochTimeSent >= currEpochTime - THREE_HUNDRED
+      && epochTimeSent <= currEpochTime + THREE_HUNDRED) {
     return true;
   }
   return false;
